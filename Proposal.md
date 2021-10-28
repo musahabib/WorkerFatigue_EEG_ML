@@ -24,6 +24,7 @@ To get wasted lmao 420 BLAZE
 ## Methods
 
 ### Features
+
 MindMonitor (MM) allows us to record and extract the following features in a .csv format.
 
 |         Features         | Description                                                            | Range / Units                                 |
@@ -41,9 +42,23 @@ MindMonitor (MM) allows us to record and extract the following features in a .cs
 |        HeadBandOn        | Basic data quality indicator: if the headband is on the head           | 1=True, 0=False                               |
 |  HSI_{TP9,AF7,AF8,TP10}  | Data quality, for each of the four sensors (HSI=Horse Shoe Indicator)  | 1=Good, 2=Medium, 4=Bad                       |
 |          Battery         | Battery charge percentage                                              | %/100                                         |
-|         Elements         | Data markers such as Blink, Jaw_Clench, or numbered markers            | <various>                                     |
+|         Elements         | Data markers such as Blink, Jaw_Clench, or numbered markers            | various                                     |
     
-    
+Additionally, more features can be engineered in order to provide the ML algorithms with more information. The relative band power, for example, is commonly used in literature. (see [this article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4712412/), for example.)
+
+
+    The relative band powers are calculated by dividing the absolute linear-scale power in one band over the sum of the absolute linear-scale powers in all bands. The linear-scale band power can be calculated from the log-scale band power thusly: linear-scale band power = 10^ (log-scale band power).
+Retrieved from: [Muse Developer Documentation](https://web.archive.org/web/20181105231756/http://developer.choosemuse.com/tools/available-data#Relative_Band_Powers)
+
+Thus,
+
+$$ \alpha_r = (10^{\alpha_a}) / (10^{\alpha_a} + 10^{\beta_a} + 10^{\delta} + 10^{\gamma_a} + 10^{\theta})) $$
+
+
+
+
+
+
 
 ### Models
 
