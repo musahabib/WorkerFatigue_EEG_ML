@@ -1,12 +1,6 @@
 # MANU465 Project - Team 1
 
 
-
-
-
-## If you're seeing this then you cloned the repo succesfully.
-
-
 ## Directories
 
 **MANU465_Team1_Project/** 
