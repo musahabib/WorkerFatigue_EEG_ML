@@ -9,7 +9,9 @@
 
 ## Directories
 
-**MANU465_Team1_Project/** contains:
+**MANU465_Team1_Project/** 
+
+contains:
 
 Notebook.ipynb: The main notebook/code used in the project.
 
