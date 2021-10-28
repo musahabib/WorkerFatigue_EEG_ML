@@ -55,6 +55,10 @@ Thus,
 $$ \alpha_r = (10^{\alpha_a}) / (10^{\alpha_a} + 10^{\beta_a} + 10^{\delta} + 10^{\gamma_a} + 10^{\theta})) $$
 
 
+<img src="https://latex.codecogs.com/svg.latex?\alpha_r&space;=&space;(10^{\alpha_a})&space;/&space;(10^{\alpha_a}&space;&plus;&space;10^{\beta_a}&space;&plus;&space;10^{\delta}&space;&plus;&space;10^{\gamma_a}&space;&plus;&space;10^{\theta}))" title="\alpha_r = (10^{\alpha_a}) / (10^{\alpha_a} + 10^{\beta_a} + 10^{\delta} + 10^{\gamma_a} + 10^{\theta}))" />
+
+
+
 
 
 
