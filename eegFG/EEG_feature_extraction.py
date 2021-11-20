@@ -780,6 +780,7 @@ state: label for the feature vector
 def generate_feature_vectors_from_samples(file_path, nsamples, period, 
 										  state = None, 
 										  remove_redundant = True,
+                                          slide_percent = 0.5,
 										  cols_to_ignore = None):
 	"""
 	Reads data from CSV file in "file_path" and extracts statistical features 
@@ -859,7 +860,8 @@ def generate_feature_vectors_from_samples(file_path, nsamples, period,
 								 t = s[:, 0], axis = 0)
 		
 		# Slide the slice by 1/2 period
-		t += 0.5 * period
+        ## MODIFIED: keep the sliding window as param.
+		t += slide_percent * period
 		
 		
 		# Compute the feature vector. We will be appending the features of the 
