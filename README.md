@@ -21,4 +21,5 @@ Notebook.ipynb: The main notebook/code used in the project.
         Test/ : Testing Data (not in use for now)
 
 
+This project will create a ML model that will predict if a person is tired or not tired
 
