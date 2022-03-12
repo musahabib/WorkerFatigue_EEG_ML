@@ -1,9 +1,8 @@
-# MANU465 Project - Team 1
+# Predicting Worker Fatigue Using AI and Machine Learning
 
 
 ## Directories
 
-**MANU465_Team1_Project/** 
 
 contains:
 
